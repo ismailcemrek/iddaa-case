@@ -6,3 +6,4 @@ Feature: Betting Coupon Play
     And The bet type and amount are entered
     And The coupon is confirmed
     Then The success message should be displayed
+
