@@ -15,12 +15,7 @@ public class DriverManager {
 
             ChromeOptions options = new ChromeOptions();
 
-            // Headless modu sistem özelliğine göre ayarla
-            String headlessProperty = System.getProperty("headless", "false");
-            if (headlessProperty.equalsIgnoreCase("true")) {
-                options.addArguments("--headless=new");
-            }
-
+            options.addArguments("--headless=new");
             options.addArguments("--no-sandbox");
             options.addArguments("--disable-dev-shm-usage");
 
